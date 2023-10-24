@@ -5,7 +5,22 @@
 </head>
 <body>
     <div class="centered-div">
-        <p>Ini adalah div berada di tengah.</p>
+        <h1>Under Construction</h1>
+        <script>
+  // Daftar teks yang akan digunakan
+  var teksBerubah = ["Please Wait...", "Lalala...", "Created By CoGenus."];
+  var indeksTeks = 0; // Indeks teks saat ini
+
+  // Fungsi untuk mengubah teks
+  function ubahTeks() {
+    document.getElementById("Plese Wait...").innerHTML = teksBerubah[indeksTeks];
+    indeksTeks = (indeksTeks + 1) % teksBerubah.length;
+  }
+
+  // Memulai perubahan teks secara berkala
+  setInterval(ubahTeks, 2000); // Ubah setiap 2 detik (2000 milidetik)
+        </script>
+        
     </div>
 </body>
 </html>
